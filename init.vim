@@ -16,6 +16,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'freitass/todo.txt-vim'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 "General
@@ -90,3 +91,19 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"Intellij
+
+nmap ,c :action GotoClass<CR>
+nmap ,f :action GotoFile<CR>
+nmap ,s :action GotoSymbol<CR>
+nmap ,a :action GotoAction<CR>
+
+nmap <C-'> :action FileStructurePopup<CR>
+
+nmap grc :action Git.ResolveConflicts<CR>
+
+nmap cg :action Generate<CR>
+
+nmap <S-R> :action RenameElement<CR>
+
+nmap <C-Q> :action QuickJavaDoc<CR>

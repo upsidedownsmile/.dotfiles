@@ -19,7 +19,7 @@ case $- in *i*)
 esac
 
 # change layout to us and caps to ctrl
-setxkbmap -layout us -option ctrl:nocaps
+# setxkbmap -layout us -option ctrl:nocaps
 export EDITOR=nvim
 
 # z jump around
@@ -27,6 +27,9 @@ export EDITOR=nvim
 
 # alias to know the size of dirs
 alias size='du -sch ./*'
+alias docker-dashboard='docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
 
 # load scripts
 . ~/.scripts/load.sh ~/.scripts/startup/
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
