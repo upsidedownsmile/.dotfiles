@@ -1,0 +1,12 @@
+-- disable netrw
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
+
+-- require('neo-tree').setup {
+--     filesystem = {
+--     follow_current_file = { enabled = true },
+--     use_libuv_file_watcher = true,
+--     }
+-- }
+--
+-- vim.keymap.set("n", "<leader>n", ":Neotree toggle source=filesystem reveal=true position=left<CR>")
